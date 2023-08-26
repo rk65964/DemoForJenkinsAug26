@@ -1,10 +1,12 @@
-package com.example.model;
+package com.example.DemoForJenkins;
 
 import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+
+import com.example.model.UnitTesting;
 
 @SpringBootTest
 public class UnitTestingTest {

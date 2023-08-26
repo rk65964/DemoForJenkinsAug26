@@ -3,9 +3,19 @@ package com.example.model;
 public class EmployeeDTO {
 
 	private int id;
-	private int empName;
-	private int department;
-	private int address;
+	private String empName;
+	private String department;
+	private String address;
+
+	
+
+	public EmployeeDTO(int id, String empName, String department, String address) {
+		super();
+		this.id = id;
+		this.empName = empName;
+		this.department = department;
+		this.address = address;
+	}
 
 	public int getId() {
 		return id;
@@ -15,34 +25,34 @@ public class EmployeeDTO {
 		this.id = id;
 	}
 
-	public int getEmpName() {
+	public String getEmpName() {
 		return empName;
 	}
 
-	public void setEmpName(int empName) {
+	public void setEmpName(String empName) {
 		this.empName = empName;
 	}
 
-	public int getDepartment() {
+	public String getDepartment() {
 		return department;
 	}
 
-	public void setDepartment(int department) {
+	public void setDepartment(String department) {
 		this.department = department;
 	}
 
-	public int getAddress() {
+	public String getAddress() {
 		return address;
 	}
 
-	public void setAddress(int address) {
+	public void setAddress(String address) {
 		this.address = address;
 	}
 
-	@Override
-	public String toString() {
-		return "EmployeeDTO [id=" + id + ", empName=" + empName + ", department=" + department + ", address=" + address
-				+ "]";
-	}
+	/*
+	 * @Override public String toString() { return "EmployeeDTO [id=" + id +
+	 * ", empName=" + empName + ", department=" + department + ", address=" +
+	 * address + "]"; }
+	 */
 
 }
